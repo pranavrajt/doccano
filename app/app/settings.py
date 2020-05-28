@@ -300,9 +300,9 @@ APPLICATION_INSIGHTS = {
 }
 
 # necessary for email verification of new accounts
-EMAIL_USE_TLS = env.bool('EMAIL_USE_TLS', False)
-EMAIL_HOST = env('EMAIL_HOST', None)
-EMAIL_HOST_USER = env('EMAIL_HOST_USER', None)
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = ''
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD', None)
 EMAIL_PORT = env.int('EMAIL_PORT', 587)
 
